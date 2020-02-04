@@ -3,6 +3,9 @@
 
 <template>
   <div :class="[$style.app]">
-    <router-view />
+    <Navigation />
+    <transition @leave="onLeave">
+      <router-view />
+    </transition>
   </div>
 </template>
