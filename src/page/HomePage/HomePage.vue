@@ -3,6 +3,6 @@
 
 <template>
   <div :class="[$style.homePage]">
-    <h2>HomePage</h2>
+    <Hero ref="hero" />
   </div>
 </template>

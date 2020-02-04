@@ -1,17 +1,17 @@
 import { AbstractPageTransitionComponent } from 'vue-transition-component';
-import HomePageTransitionController from './HomePageTransitionController';
-import Hero from '../../component/Hero';
+import ContactPageTransitionController from './ContactPageTransitionController';
+import ContactForm from '../../component/ContactForm';
 
 // @vue/component
 export default {
-  name: 'HomePage',
+  name: 'ContactPage',
   components: {
-    Hero,
+    ContactForm,
   },
   extends: AbstractPageTransitionComponent,
   methods: {
     handleAllComponentsReady() {
-      this.transitionController = new HomePageTransitionController(this);
+      this.transitionController = new ContactPageTransitionController(this);
       this.isReady();
     },
   },
